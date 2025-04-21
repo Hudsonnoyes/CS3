@@ -116,7 +116,7 @@ In this section, you should give explicit step-by-step instructions to reproduce
 ### Part 3: Training the Models
 
 1. Run ```deeplab.py``` and ```unet.py``` one at a time to train the two models
-2. Run ```deep_test.py``` and ```unet.test.py``` to test the two models, generating two ```metrics.csv``` files
+2. Run ```deep_test.py``` and ```unet.test.py``` to test the two models using the ```*.pth``` checkpoint weights saved from training. This will will generate two ```metrics.csv``` files
 
 ### Part 4: Analyzing Results
 
