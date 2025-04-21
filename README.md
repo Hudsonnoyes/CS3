@@ -44,6 +44,10 @@ Below is a map of the repository, illustrating the hierarchy of files and folder
 
 │  │-- ```requirements.txt``` # required packages
 
+│  │-- ```unet_results.csv``` # raw results of UNet testing
+
+│  │-- ```unet_results.csv``` # saved weights after 13 epochs of training
+
 │-- 📂 OUTPUT/
 
 │  │-- ```metrics_plot.jpg``` # box plot comparing performances of nnUNet and DeepLabV3+ and displaying t-Test significance
