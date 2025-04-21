@@ -9,6 +9,7 @@ This project was developed using the following software and tools:
 Software Used:
 
 [Python]
+[Jupyter Notebook]
 [UVA Rivanna HPC]
 
 Add-On Packages:
@@ -95,6 +96,28 @@ Below is a map of the repository, illustrating the hierarchy of files and folder
 ## Section 3: Reproduction Steps
 In this section, you should give explicit step-by-step instructions to reproduce the Results of your study. These instructions should be written in straightforward plain English, but they must be concise, but detailed and precise enough, to make it possible for an interested user to reproduce your results without much difficulty. N.B. This section will be crucial for the CS1 assignment, where you'll be required to reproduce the results of other groups. Therefore, make sure to explain this section thoroughly. 
 
-### Part 1: Acquiring Data
+### Part 1: Setting Up Environment/Workflow
 
-1. Follow ```data_import_process.md```
+1. We recommend running all steps in the Jupyter Notebook accessed through Rivanna
+2. Set up your virtual environment with all dependencies from ```requirements.txt``` installed
+3. Clone this repo
+
+```
+! git clone https://github.com/ali-rn/project-3/
+```
+
+### Part 2: Importing & Preprocessing Data
+
+1. Follow ```data_import_process.md``` to obtain the dataset
+2. Run ```data_reorg.py``` to rearrange image and labels data to match the input format of the mdoels and truncate dataset to 110 cases
+3. Run ```data_split.py``` to split the dataset into 64/16/20 (train/validate/test)
+4. Run ```data_slice.py``` to slice the 3D patient ```*.nii.gz``` volumes into 2D ```*.npy``` slices for faster, less expensive processing
+
+### Part 3: Training the Models
+
+1. Run ```deeplab.py``` and ```unet.py``` one at a time to train the two models
+2. Run ```deep_test.py``` and ```unet.test.py``` to test the two models, generating two ```metrics.csv``` files
+
+### Part 4: Analyzing Results
+
+1. Run ```analysis.ipynb``` and input both ```*.csv``` files to generate the output boxplot
