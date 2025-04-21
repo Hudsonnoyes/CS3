@@ -6,25 +6,39 @@ This project was developed using the following software and tools:
 Software Used:
 
 [Python]
+
 [Jupyter Notebook]
+
 [UVA Rivanna HPC]
+
 
 Add-On Packages:
 
 [NUMPY] - [array operations]
+
 [NIBABEL] - [accessing NIfTI]
+
 [SCIKIT-LEARN] [data splitting / metrics]
+
 [TQDM] - [progress bars]
+
 [PANDAS] - [CSV logging]
+
 [PYTORCH] - [core deep learning library]
+
 [TORCHVISION] - [tensor utilities]
+
 [CUDATOOLKIT] - [CUDA runtime]
+
 [MONAI] - [medical imaging toolkit]
+
 
 Platform Compatibility:
 
 ✅ Windows
+
 ✅ macOS (used during project)
+
 ✅ Linux
 
 Ensure you have the required software installed before proceeding.
@@ -40,13 +54,13 @@ Below is a map of the repository, illustrating the hierarchy of files and folder
 
 │  │-- ```deep_results.csv``` # raw results of DeepLabV3+ testing
 
-│  │-- ```deeplabv3p_mobilenet2d.pth``` # saved weights after 30 epochs of training
+│  │-- ```deeplabv3p_mobilenet2d.pth``` # saved weights of DeepLabV3+ after 30 epochs of training
 
 │  │-- ```requirements.txt``` # required packages
 
 │  │-- ```unet_results.csv``` # raw results of UNet testing
 
-│  │-- ```unet_results.csv``` # saved weights after 13 epochs of training
+│  │-- ```two_layer_unet_epoch_13.csv``` # saved weights of UNet after 13 epochs of training
 
 │-- 📂 OUTPUT/
 
@@ -54,15 +68,15 @@ Below is a map of the repository, illustrating the hierarchy of files and folder
 
 │-- 📂 SCRIPTS/
 
+│  │-- 📂 Preprocessing/
+
+│  │  │-- ```data_reorg.py``` # (1) separates images from masks/labels and only takes first 110 cases
+
+│  │  │-- ```data_split.py``` # (2) splits data 64/16/20 (train/validate/test)
+
+│  │  │-- ```data_slice.py``` # (3) reshapes *.nii.gz images and slices them into (512, 512) *.npy slices
+
 │  │-- 📂 DeepLabV3+/
-
-│  │  │-- 📂 Preprocessing/
-
-│  │  │  │-- ```data_reorg.py``` # (1) separates images from masks/labels and only takes first 110 cases
-
-│  │  │  │-- ```data_split.py``` # (2) splits data 64/16/20 (train/validate/test)
-
-│  │  │  │-- ```data_slice.py``` # (3) reshapes *.nii.gz images and slices them into (512, 512) *.npy slices
 
 │  │  │-- 📂 Info/
 
@@ -74,9 +88,7 @@ Below is a map of the repository, illustrating the hierarchy of files and folder
 
 │  │  │-- ```deep_test.py``` # testing code, outputs ```deep_results.csv```
 
-│  │-- 📂 nnUNet/
-
-│  │  │-- 📂 Preprocessing/
+│  │-- 📂 UNet/
 
 │  │  │-- 📂 Info/
 
