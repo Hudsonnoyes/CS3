@@ -1,8 +1,5 @@
 # project-3
 
-Goal: This file serves as an orientation to everyone who comes to your repository, it should enable them to get their bearings.
-Use markdown headers to divide content.
-
 ## Section 1: Software & Platform
 This project was developed using the following software and tools:
 
