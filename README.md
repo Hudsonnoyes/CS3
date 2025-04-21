@@ -78,11 +78,15 @@ Below is a map of the repository, illustrating the hierarchy of files and folder
 
 │  │  │-- 📂 Info/
 
-│  │  │  │-- ```UNet_paper.pdf```
+│  │  │  │-- ```nnUNet_paper.pdf```
 
-│  │  │  │-- ```UNet_architecture.jpg```
+│  │  │  │-- ```nnUNet_architecture.jpg```
 
-│  │  │-- ```unet.py```
+│  │  │-- ```unet.py``` # training code, 30 epochs
+
+│  │  │-- ```unet_test.py``` # testing code, outputs ```unet_results.csv```
+
+│  │-- ```analysis.ipynb``` #
 
 |-- LICENSE.md
 
