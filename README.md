@@ -52,7 +52,7 @@ Below is a map of the repository, illustrating the hierarchy of files and folder
 
 │-- 📂 SCRIPTS/
 
-│  │-- 📂 DeepLabV3/
+│  │-- 📂 DeepLabV3+/
 
 │  │  │-- 📂 Preprocessing/
 
