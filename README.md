@@ -64,7 +64,9 @@ Below is a map of the repository, illustrating the hierarchy of files and folder
 
 │-- 📂 OUTPUT/
 
-│  │-- ```metrics_plot.jpg``` # box plot comparing performances of nnUNet and DeepLabV3+ and displaying t-Test significance
+│  │-- ```Presentation.pdf``` # class presentation
+
+│  │-- ```Results.jpg``` # box plot comparing performances of nnUNet and DeepLabV3+ and displaying t-Test significance
 
 │-- 📂 SCRIPTS/
 
