@@ -54,7 +54,7 @@ Below is a map of the repository, illustrating the hierarchy of files and folder
 
 │  │-- 📂 DeepLabV3/
 
-│  │  │-- 📂 DataProcessing/
+│  │  │-- 📂 Preprocessing/
 
 │  │  │  │-- ```data_reorg.py``` # (1) separates images from masks/labels and only takes first 110 cases
 
@@ -62,7 +62,7 @@ Below is a map of the repository, illustrating the hierarchy of files and folder
 
 │  │  │  │-- ```data_slice.py``` # (3) reshapes *.nii.gz images and slices them into (512, 512) *.npy slices
 
-│  │  │-- 📂 ModelInformation/
+│  │  │-- 📂 Info/
 
 │  │  │  │-- ```Deep_paper.pdf```
 
@@ -74,9 +74,9 @@ Below is a map of the repository, illustrating the hierarchy of files and folder
 
 │  │-- 📂 nnUNet/
 
-│  │  │-- 📂 DataProcessing/
+│  │  │-- 📂 Preprocessing/
 
-│  │  │-- 📂 ModelInformation/
+│  │  │-- 📂 Info/
 
 │  │  │  │-- ```UNet_paper.pdf```
 
