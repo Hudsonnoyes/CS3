@@ -1,7 +1,7 @@
 # Kidney segmentation case study
 
 ## Data
-All data necessary for the case study is in the Data folder.
+Case study data, the direct link to the challenge data is https://kits-challenge.org/kits23/.
 
 ## Scripts
 Shows example code and scripts used to load and run the models from our orginial project, additional code that is needed for the project is included in the Training a Classifier document
