@@ -18,44 +18,6 @@ The document that provides context on the case study and describes the deliverab
 ## Training a classifier
 Extremely important document: describes the process of training a classification model using pytorch
 
-Software Used:
-
-[Python]
-
-[Jupyter Notebook]
-
-[UVA Rivanna HPC]
-
-
-Add-On Packages:
-
-[NUMPY] - [array operations]
-
-[NIBABEL] - [accessing NIfTI]
-
-[SCIKIT-LEARN] [data splitting / metrics]
-
-[TQDM] - [progress bars]
-
-[PANDAS] - [CSV logging]
-
-[PYTORCH] - [core deep learning library]
-
-[TORCHVISION] - [tensor utilities]
-
-[CUDATOOLKIT] - [CUDA runtime]
-
-[MONAI] - [medical imaging toolkit]
-
-
-Platform Compatibility:
-
-✅ Windows
-
-✅ macOS (used during project)
-
-✅ Linux
-
 
 
 
