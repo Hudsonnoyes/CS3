@@ -1,7 +1,22 @@
-# project-3
+# Kidney segmentation case study
 
-## Section 1: Software & Platform
-This project was developed using the following software and tools:
+## Data
+All data necessary for the case study is in the Data folder.
+
+## Scripts
+Shows the code and scripts used to load and run the models
+
+## AI and ML
+An article meant to familiarize the participant with how machine learning is used in medical imaging
+
+## CS3_Rubric
+The rubric used for scoring case study submissions.
+
+## Hook Document
+The document that provides context on the case study and describes the deliverable.
+
+## Training a classifier
+Extremely important document: describes the process of training a classification model using pytorch
 
 Software Used:
 
@@ -43,8 +58,7 @@ Platform Compatibility:
 
 Ensure you have the required software installed before proceeding.
 
-## Section 2: Directory
-Below is a map of the repository, illustrating the hierarchy of files and folders:
+
 
 📂 project-3/ 
 
@@ -62,11 +76,6 @@ Below is a map of the repository, illustrating the hierarchy of files and folder
 
 │  │-- ```two_layer_unet_epoch_13.csv``` # saved weights of UNet after 13 epochs of training
 
-│-- 📂 OUTPUT/
-
-│  │-- ```Presentation.pdf``` # class presentation
-
-│  │-- ```Results.jpg``` # box plot comparing performances of nnUNet and DeepLabV3+ and displaying t-Test significance
 
 │-- 📂 SCRIPTS/
 
@@ -108,30 +117,4 @@ Below is a map of the repository, illustrating the hierarchy of files and folder
 
 |-- README.md
 
-## Section 3: Reproduction Steps
-
-### Part 1: Setting Up Environment/Workflow
-
-1. We recommend running all steps in the Jupyter Notebook accessed through Rivanna
-2. Set up your virtual environment with all dependencies from ```requirements.txt``` installed
-3. Clone this repo
-
-```
-! git clone https://github.com/ali-rn/project-3/
-```
-
-### Part 2: Importing & Preprocessing Data
-
-1. Follow ```data_import_process.md``` to obtain the dataset
-2. Run ```data_reorg.py``` to rearrange image and labels data to match the input format of the mdoels and truncate dataset to 110 cases
-3. Run ```data_split.py``` to split the dataset into 64/16/20 (train/validate/test)
-4. Run ```data_slice.py``` to slice the 3D patient ```*.nii.gz``` volumes into 2D ```*.npy``` slices for faster, less expensive processing
-
-### Part 3: Training the Models
-
-1. Run ```deeplab.py``` and ```unet.py``` one at a time to train the two models
-2. Run ```deep_test.py``` and ```unet.test.py``` to test the two models using the ```*.pth``` checkpoint weights saved from training. This will will generate two ```metrics.csv``` files
-
-### Part 4: Analyzing Results
-
-1. Run ```analysis.ipynb``` and input both ```*.csv``` files to generate the output boxplot
+## 
